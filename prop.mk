@@ -72,10 +72,6 @@ persist.vendor.dpm.loglevel=0
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.debug.coresight.config=stm-events
 
-# Dalvik dex2oat
-PRODUCT_PROPERTY_OVERRIDES += \
-dalvik.vm.dex2oat64.enabled=true
-
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
 debug.egl.hw=0 \
@@ -91,8 +87,6 @@ persist.debug.wfd.enable=1 \
 persist.demo.hdmirotationlock=false \
 persist.hwc.enable_vds=1 \
 persist.hwc.mdpcomp.enable=true \
-ro.hardware.vulkan=adreno \
-ro.hardware.egl=adreno \
 ro.opengles.version=196610 \
 ro.qualcomm.cabl=0 \
 ro.sf.lcd_density=480 \
