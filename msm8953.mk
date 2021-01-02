@@ -446,6 +446,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
+$(call inherit-product-if-exists, vendor/google/gms/config.mk)
+$(call inherit-product-if-exists, vendor/google/pixel/config.mk)
 
-#Work Around to disable the button light
-#$(shell echo "0" > /sys/class/leds/button-backlight/max_brightness)
+
