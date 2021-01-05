@@ -514,10 +514,10 @@
           specified name exists on the device, autofill will be disabled by default.
     -->
     <string name="config_defaultAutofillService" translatable="false">com.google.android.gms/.autofill.service.AutofillService</string>
-
     
     <!-- Smart charging -->
     <bool name="config_smartChargingAvailable">true</bool>
+<<<<<<< HEAD
     
     
     <!-- Hardware keys present on the device, stored as a bit field.
@@ -571,5 +571,10 @@
          autodetected from the Configuration. -->
     <bool name="config_showNavigationBar">true</bool>
     
+=======
+
+     <!-- Blank Display After Doze -->
+    <bool name="config_displayBlanksAfterDoze">true</bool>
+>>>>>>> 7deb6a4... msm8953-common: add overlay to redraw screen after wakeup from doze
 </resources>
 
