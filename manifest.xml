@@ -453,6 +453,7 @@
         </interface>
     </hal>
     <hal format="hidl">
+<<<<<<< HEAD
         <name>vendor.lineage.trust</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -462,6 +463,8 @@
         </interface>
     </hal-->
     <hal format="hidl">
+=======
+>>>>>>> b59dfe8... msm8953-common: manifest: Remove Trust interface entry
         <name>vendor.qti.data.factory</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
