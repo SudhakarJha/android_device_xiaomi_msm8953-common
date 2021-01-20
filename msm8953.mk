@@ -76,9 +76,13 @@ PRODUCT_PACKAGES += \
     com.dsi.ant.antradio_library \
     libantradio
 
-# Device-specific Settings
+# Dirac
 PRODUCT_PACKAGES += \
-   XiaomiParts
+   Dirac
+   
+# DeviceDoze
+PRODUCT_PACKAGES += \
+    XiaomiDoze
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -317,7 +321,8 @@ PRODUCT_PACKAGES += \
     init.qcom.bt.sh \
     init.qcom.post_boot.sh \
     move_time_data.sh \
-    move_wifi_data.sh
+    move_wifi_data.sh \
+    init.xiaomi_parts.rc
 
 # RCS
 PRODUCT_PACKAGES += \
@@ -388,8 +393,8 @@ PRODUCT_COPY_FILES += \
 #    vendor.lineage.touch@1.0-service.xiaomi_8953
 
 # Trust HAL
-PRODUCT_PACKAGES += \
-   vendor.lineage.trust@1.0-service
+#PRODUCT_PACKAGES += \
+#   vendor.lineage.trust@1.0-service
 
 # USB HAL
 PRODUCT_PACKAGES += \
@@ -450,5 +455,6 @@ PRODUCT_BOOT_JARS += \
 
 #$(call inherit-product-if-exists, vendor/google/gms/config.mk)
 #$(call inherit-product-if-exists, vendor/google/pixel/config.mk)
+
 
 

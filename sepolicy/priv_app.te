@@ -3,4 +3,5 @@ allow priv_app theme_prop:file { open read};
 allow priv_app bt_firmware_file:filesystem getattr;
 allow priv_app firmware_file:filesystem getattr;
 allow priv_app update_engine_service:service_manager { find };
+allow priv_app blkio_dev:dir search;
 

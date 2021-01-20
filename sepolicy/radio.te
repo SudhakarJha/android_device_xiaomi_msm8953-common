@@ -1,3 +1,5 @@
 allow radio hal_datafactory_hwservice:hwservice_manager find;
+allow radio cnd:binder { call };
+allow radio blkio_dev:dir { search };
 get_prop(radio, qcom_ims_prop);
 

@@ -1,0 +1,1 @@
+allow secure_element blkio_dev:dir { search };

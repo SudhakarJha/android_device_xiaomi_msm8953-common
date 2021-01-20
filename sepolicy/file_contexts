@@ -1,5 +1,6 @@
 # Executables	
 /system/bin/chargeonlymode			u:object_r:charger_exec:s0
+/system/bin/folio_daemon                      u:object_r:folio_daemon_exec:s0
 
 # Fpc Fingerprint
 /data/fpc(/.*)?					u:object_r:fpc_data_file:s0
@@ -10,6 +11,10 @@
 /dev/goodix_fp					u:object_r:gx_fpd_device:s0
 /data/gf_data(/.*)?                             u:object_r:gx_fpd_data_file:s0
 /persist/data/gxfp(/.*)?			u:object_r:gx_fpd_data_file:s0
+
+# blkio
+/dev/blkio(/.*)?                                                                                                            u:object_r:blkio_dev:s0
+/dev/blkio/background(/.*)?                                                                                                 u:object_r:blkio_dev:s0
 
 # Firmware	
 /firmware                                                     u:object_r:firmware_file:s0	
@@ -35,6 +40,9 @@
 /sys/devices(/platform)?/soc/leds-qpnp-[0-9]+/leds(/.*)?				u:object_r:sysfs_leds:s0
 /sys/devices(/platform)?/soc/78b7000\.i2c/i2c-3/3-[0-9a-f]+/enable_dt2w		u:object_r:proc_touchpanel:s0
 /sys/devices(/platform)?/soc/78b7000\.i2c/i2c-3/3-[0-9a-f]+/disable_keys         u:object_r:proc_touchpanel:s0
+
+# Thermal
+/data/vendor/thermal(/.*)?                                                                                                  u:object_r:thermal_data_file:s0
 
 # Touch
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.xiaomi_8953 u:object_r:hal_lineage_touch_default_exec:s0

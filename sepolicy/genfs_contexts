@@ -1,3 +1,6 @@
+# Battery
+genfscon sysfs /devices/soc/c176000.i2c/i2c-2/2-001d            u:object_r:sysfs_battery_supply:s0
+
 # Boot reason
 genfscon proc  /sys/kernel/boot_reason   u:object_r:proc_boot_reason:s0
 
@@ -16,3 +19,9 @@ genfscon debugfs /rmt_storage	u:object_r:debugfs_rmt:s0
 
 # Touchscreen
 genfscon proc /touchpanel	u:object_r:proc_touchpanel:s0
+
+# XiaomiParts
+genfscon sysfs /devices/virtual/graphics/fb0/measured_fps       u:object_r:sysfs_fpsinfo:s0
+genfscon sysfs /class/graphics/fb0/measured_fps                 u:object_r:sysfs_fpsinfo:s0
+genfscon sysfs /kernel/sound_control/headphone_gain             u:object_r:sysfs_headphonegain:s0
+genfscon sysfs /kernel/sound_control/mic_gain                   u:object_r:sysfs_micgain:s0
